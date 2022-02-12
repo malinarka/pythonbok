@@ -7,6 +7,6 @@ while True:
     antal_studsar = 0
     while höjd > 0.01:
         höjd = höjd * 0.66
-        antal_studsar = antal_studsar + 1 
-    
+        antal_studsar = antal_studsar + 1
+
     print("Antal studsar:", antal_studsar)
