@@ -1,0 +1,27 @@
+# This is a GitHub workflow defining a set of jobs with a set of steps.
+# ref: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+#
+name: Test
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-black-autoformatting:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      
+      - name: Install black
+        run: |
+          pip install black
+
+      - name: Test if code was black autoformatted
+        run: |
+          black --check .
