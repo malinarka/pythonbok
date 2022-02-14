@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-black-autoformatting:
+  test-autoformatting:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
