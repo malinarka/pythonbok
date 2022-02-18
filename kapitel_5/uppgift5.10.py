@@ -9,5 +9,5 @@ print(dtext)
 
 # Skriv ut tiden. 
 t = dt.time()
-ttext= str(t)[:8]
+ttext = str(t)[:8]
 print(ttext)
