@@ -1,8 +1,11 @@
 personnummer = input("Skriv in ditt personnummer enligt ååmmddxxxx: ")
 
-print(personnummer[8])
-
-if personnummer[8] == 1 or 3 or 5 or 7 or 9:
+if int(personnummer[8]) % 2 == 1:
     print("Personen är en man.")
 else: 
     print("Personen är en kvinna.")
+
+
+# Försökte göra denna med OR men det gick inte så bra. Erik tipsade att man även
+# kan göra om de nummer som man vill jämföra med till en lista och sedan använda
+# en if-sats med in. Kommer lära sig i nästa kapitel. 
